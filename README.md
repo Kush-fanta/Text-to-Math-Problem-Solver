@@ -1,3 +1,5 @@
+---
+
 # Math Problem Solver and Data Search Assistant
 
 This project is a Streamlit-based web application that uses Groq's API and LangChain to solve mathematical problems and search for information using Wikipedia. The application is designed to provide step-by-step solutions to math problems and assist with data searches.
@@ -19,8 +21,8 @@ Before running the project, ensure you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/math-app.git
-   cd math-app
+   git clone https://github.com/your-repo/text-to-math-problem-solver.git
+   cd text-to-math-problem-solver
    ```
 
 2. **Create a Virtual Environment**:
@@ -40,7 +42,7 @@ Before running the project, ensure you have the following installed:
    GROQ_API_KEY=your_groq_api_key_here
    ```
 
-## Running the Application
+## Running the Application Locally
 
 1. **Activate the Virtual Environment**:
    ```bash
@@ -67,6 +69,50 @@ Before running the project, ensure you have the following installed:
 3. **View Results**:
    - The application will display the solution or search results in the chat interface.
 
+## Deployment
+
+### Deploying on Streamlit Cloud
+
+1. **Update `requirements.txt`**:
+   - Ensure all dependencies in `requirements.txt` are valid and correctly spelled. For example:
+     ```plaintext
+     langchain
+     python-dotenv
+     ipykernel
+     langchain_community
+     pypdf
+     bs4
+     arxiv
+     pymupdf
+     wikipedia
+     langchain-text-splitters
+     langchain-openai
+     sentence_transformers
+     langchain_huggingface
+     faiss-cpu
+     chromadb
+     langchain-chroma
+     langchain_groq
+     uvicorn
+     fastapi
+     langserve
+     numexpr
+     ```
+
+2. **Push Changes to GitHub**:
+   - Commit and push your changes to the repository:
+     ```bash
+     git add requirements.txt
+     git commit -m "Fix dependency issues"
+     git push origin main
+     ```
+
+3. **Deploy on Streamlit**:
+   - Go to [Streamlit Cloud](https://streamlit.io/cloud) and deploy your app by connecting your GitHub repository.
+
+4. **Monitor Logs**:
+   - If the deployment fails, check the logs in the Streamlit Cloud dashboard for detailed error messages.
+
 ## Dependencies
 
 The project relies on the following Python packages:
@@ -77,9 +123,19 @@ The project relies on the following Python packages:
 - `langchain_community`
 - `wikipedia`
 - `python-dotenv`
+- `pypdf`
+- `bs4`
+- `arxiv`
+- `pymupdf`
+- `sentence_transformers`
+- `faiss-cpu`
+- `chromadb`
+- `uvicorn`
+- `fastapi`
+- `langserve`
+- `numexpr`
 
-For a complete list of dependencies, refer to the `require.txt` file.
-
+For a complete list of dependencies, refer to the `requirements.txt` file.
 
 ## Acknowledgments
 
