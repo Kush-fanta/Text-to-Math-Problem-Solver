@@ -4,7 +4,7 @@ ipykernel
 langchain_community
 pypdf
 bs4
-arixv
+arxiv
 pymupdf
 wikipedia
 langchain-text-splitters
