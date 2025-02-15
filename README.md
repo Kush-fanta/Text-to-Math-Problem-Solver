@@ -31,7 +31,7 @@ Before running the project, ensure you have the following installed:
 
 3. **Install Dependencies**:
    ```bash
-   pip install -r require.txt
+   pip install -r requirements.txt
    ```
 
 4. **Set Up Environment Variables**:
