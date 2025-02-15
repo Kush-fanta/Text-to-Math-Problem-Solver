@@ -1,5 +1,5 @@
 langchain
-python-dotvenv
+python-dotenv
 ipykernel
 langchain_community
 pypdf
